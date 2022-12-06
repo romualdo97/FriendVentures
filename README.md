@@ -16,7 +16,7 @@ Registering services implementatations is done using a config object `UOnlineSer
 
 ![Showcase preview](https://github.com/romualdo97/FriendVentures/blob/master/Showcase/ServicesConfig.png?raw=true)
 
-All the registered services implement the `IBaseService` which is add the following access point for config data.
+All the registered services implement the `IBaseService` which adds the following access point for config data.
 
 ```
 /**
@@ -37,4 +37,8 @@ ConfigT* GetConfig()
 }
 ```
 
+And can be used as on specific service implementations.
 
+```
+const UServiceMockedConfig* Config = GetConfig<UServiceMockedConfig>();
+```
