@@ -17,12 +17,12 @@ public:
 	uint32 bHasVoiceSupport:1;
 	FDateTime LastOnline;
 
-	bool operator==(const FOnlineUserPresence& Rhs) const
+	FORCEINLINE bool operator==(const FOnlineUserPresence& Rhs) const
 	{
 		return FMemory::Memcmp(this, &Rhs, sizeof(this)) == 0;
 	}
 
-	bool operator!=(const FOnlineUserPresence& Rhs) const
+	FORCEINLINE bool operator!=(const FOnlineUserPresence& Rhs) const
 	{
 		return !(*this == Rhs);
 	}
