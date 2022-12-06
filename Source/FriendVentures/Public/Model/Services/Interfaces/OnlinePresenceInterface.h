@@ -1,7 +1,6 @@
 #pragma once
 
 #include "BaseServiceInterface.h"
-#include "CoreTypes.h"
 
 struct FGuid;
 

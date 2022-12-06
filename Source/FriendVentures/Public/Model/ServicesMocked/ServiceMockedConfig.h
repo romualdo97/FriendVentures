@@ -2,7 +2,6 @@
 #include "Model/Services/OnlineServicesSubsystemConfig.h"
 #include "OnlineFriendsMocked.h"
 #include "OnlinePresenceMocked.h"
-#include "Engine/DataTable.h"
 #include "ServiceMockedConfig.generated.h"
 
 /**

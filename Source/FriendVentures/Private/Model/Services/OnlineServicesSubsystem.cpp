@@ -2,9 +2,10 @@
 
 
 #include "Model/Services/OnlineServicesSubsystem.h"
+
+#include "FriendVentures/FriendVentures.h"
 #include "Model/Services/Interfaces/OnlinePresenceInterface.h"
 #include "Model/Services/OnlineServicesSubsystemConfig.h"
-#include "FriendVentures/FriendVentures.h"
 #include "Model/Services/Interfaces/OnlineFriendsInterface.h"
 
 UOnlineServicesSubsystem::UOnlineServicesSubsystem() : UGameInstanceSubsystem()

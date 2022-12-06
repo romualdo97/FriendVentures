@@ -2,9 +2,10 @@
 
 
 #include "View/DefaultHUDWidget.h"
+
+#include "FriendVentures/FriendVentures.h"
 #include "ViewModel/FriendsViewModel.h"
 #include "ViewModel/Data/Friend.h"
-#include "FriendVentures/FriendVentures.h"
 
 void UDefaultHUDWidget::NativeConstruct()
 {

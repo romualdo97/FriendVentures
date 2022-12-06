@@ -2,9 +2,10 @@
 
 
 #include "Model/ServicesMocked/OnlinePresenceMocked.h"
-#include "Model/ServicesMocked/ServiceMockedConfig.h"
+
 #include "CoreTypes.h"
 #include "FriendVentures/FriendVentures.h"
+#include "Model/ServicesMocked/ServiceMockedConfig.h"
 
 
 void FOnlinePresenceMocked::SetPresence(FGuid User, const FOnlineUserPresence& NewPresence,

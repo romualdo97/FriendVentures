@@ -66,7 +66,6 @@ private:
 	mutable FOnSinglePresenceChanged OnSinglePresenceChangedEvent;
 	
 	TSoftObjectPtr<UOnlineServicesSubsystem> OnlineServices;
-	TMap<FGuid, uint32> GuidToFriendsIndex;
 	
 	UPROPERTY()
 	TArray<UFriend*> Friends;

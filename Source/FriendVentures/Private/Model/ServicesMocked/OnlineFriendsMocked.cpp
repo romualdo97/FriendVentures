@@ -2,10 +2,11 @@
 
 
 #include "Model/ServicesMocked/OnlineFriendsMocked.h"
-#include "Model/ServicesMocked/Data/FriendDataTableRow.h"
-#include "Model/ServicesMocked/ServiceMockedConfig.h"
+
 #include "Engine/DataTable.h"
 #include "FriendVentures/FriendVentures.h"
+#include "Model/ServicesMocked/Data/FriendDataTableRow.h"
+#include "Model/ServicesMocked/ServiceMockedConfig.h"
 
 bool FOnlineFriendsMocked::ReadFriendsList(const FOnReadFriendsListComplete& Delegate)
 {

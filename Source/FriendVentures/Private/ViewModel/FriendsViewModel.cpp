@@ -4,9 +4,9 @@
 #include "ViewModel/FriendsViewModel.h"
 
 #include "Algo/ForEach.h"
+#include "FriendVentures/FriendVentures.h"
 #include "Model/Services/OnlineServicesSubsystem.h"
 #include "Model/Services/Interfaces/OnlineFriendsInterface.h"
-#include "FriendVentures/FriendVentures.h"
 
 bool UFriendsViewModel::Initialize_Implementation(const UWorld* InWorld)
 {
@@ -71,7 +71,6 @@ void UFriendsViewModel::Invalidate_Implementation()
 
 void UFriendsViewModel::BeginDestroy()
 {
-	GuidToFriendsIndex.Reset();
 	Friends.Reset();
 
 	if (OnlineServices)
@@ -108,7 +107,6 @@ void UFriendsViewModel::HandleFriendsListFetched(const bool bWasSuccessful)
 	}
 
 	// Reset the cache
-	GuidToFriendsIndex.Reset();
 	Friends.Reset(); // TODO: Avoid re-instancing, re-use if available
 
 	// An owned list of friend ids

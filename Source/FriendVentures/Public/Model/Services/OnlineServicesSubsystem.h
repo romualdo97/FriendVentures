@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "CoreMinimal.h"
 #include "OnlineServicesSubsystem.generated.h"
 
 class UOnlineServicesSubsystemConfig;
