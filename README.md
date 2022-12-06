@@ -37,7 +37,7 @@ ConfigT* GetConfig()
 }
 ```
 
-And can be used as on specific service implementations.
+And can be used as below on specific service implementations.
 
 ```
 const UServiceMockedConfig* Config = GetConfig<UServiceMockedConfig>();
