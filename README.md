@@ -42,3 +42,13 @@ And can be used as below on specific service implementations.
 ```
 const UServiceMockedConfig* Config = GetConfig<UServiceMockedConfig>();
 ```
+
+## ViewModel
+
+The ViewModel exposes data and events that can be used by the View, however note how this component doesn't have any dependencies on Views (i.e. Widgets) classes, this allows independent evolution of the ViewModel. On this exercise we wrapped the model data into an `UObject` called [Friend](https://github.com/romualdo97/FriendVentures/blob/master/Source/FriendVentures/Public/ViewModel/Data/Friend.h) Which then can be used by `UListView` to elegantly show a list of friend items.
+
+## View
+
+View logic was done mainly on Blueprints to illustrate that "UI Components are kept away from Business Logic", "Business Logic is kept away from Database operations" and "[ViewModel acts as a Model for the view](https://blog.grijjy.com/2018/01/22/mvvm-starter-kit-part-1-of-3/)", note that this allows the view to evolve independently.
+
+![View events preview](https://github.com/romualdo97/FriendVentures/blob/master/Showcase/View.png?raw=true)
